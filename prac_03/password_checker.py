@@ -15,12 +15,8 @@ def main():
         password = input("> ")
     print("Your {}-character password is valid: {}".format(len(password),
                                                            password))
-
-
 def is_valid_password(password):
     if len(password) >= MAX_LENGTH or len(password) <= MIN_LENGTH:
         return False
-
-
 
 main()
