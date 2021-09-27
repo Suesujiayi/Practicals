@@ -24,3 +24,11 @@ while choice != "Q":
     print(MENU)
     choice = input(">>> ").upper()
 print("Thank you.")
+
+def converting_celsius():
+    celsius = float(input("Celsius: "))
+    fahrenheit = celsius * 9.0 / 5 + 32
+    print("Result: {:.2f} F".format(fahrenheit))
+
+
+
