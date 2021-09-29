@@ -1,22 +1,27 @@
-MIN_LENGTH = 2
-MAX_LENGTH = 6
-SPECIAL_CHARS_REQUIRED = True
-SPECIAL_CHARACTERS = "!@#$%^&*()_-=+`~,./'[]<>?{}|\\"
+"""
+CP1404/CP5632 - Practical
+Password checker "skeleton" code to help you get started
+"""
+MIN_LENGTH = 6
 
 
 def main():
     """Program to get and check a user's password."""
     print("Please enter a valid password")
-    print("Your password must be between", MIN_LENGTH, "and", MAX_LENGTH,
-          "characters, and contain:")
+    print("Your password must be between", MIN_LENGTH)
     password = input("> ")
-    while not is_valid_password(password):
-        print("Invalid password!")
-        password = input("> ")
-    print("Your {}-character password is valid: {}".format(len(password),
-                                                           password))
+    is_valid_password(password)
+
+
 def is_valid_password(password):
-    if len(password) >= MAX_LENGTH or len(password) <= MIN_LENGTH:
+    """Determine if the provided password is valid."""
+    if len(password) < MIN_LENGTH:
         return False
+    else:
+        n = int(len(password))
+        for i in range(n):
+            print('*', end="")
+    return True
+
 
 main()
