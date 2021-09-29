@@ -9,8 +9,13 @@ def main():
     """Program to get and check a user's password."""
     print("Please enter a valid password")
     print("Your password must be between", MIN_LENGTH)
-    password = input("> ")
+    password = get_password()
     is_valid_password(password)
+
+
+def get_password():
+    password = input("> ")
+    return password
 
 
 def is_valid_password(password):
