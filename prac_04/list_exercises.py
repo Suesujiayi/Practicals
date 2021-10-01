@@ -6,6 +6,8 @@ def main():
         number = int(input("Numbers: "))
         numbers.append(number)
     print(numbers)
+    first_number = numbers[0]
+    print("The first number is", first_number)
 
 
 main()
