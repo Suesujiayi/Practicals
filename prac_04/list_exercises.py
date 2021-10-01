@@ -7,7 +7,9 @@ def main():
         numbers.append(number)
     print(numbers)
     first_number = numbers[0]
-    print("The first number is", first_number)
+    print("The first number is ", first_number)
+    last_number = numbers[-1]
+    print("The last number is ", last_number)
 
 
 main()
